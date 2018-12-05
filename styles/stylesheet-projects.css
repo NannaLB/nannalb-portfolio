@@ -18,16 +18,12 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
- 
-
-
 header, img {
-    height: 5%;
+   
     width: 5%;
     align-content: center;
     margin-left: 47.5%;
-    margin-top: 3%;
+    margin-top: 1%;
 }
 
 
@@ -122,6 +118,21 @@ a{
 }
 
 
+
+/*About me*/
+
+.cv-timeline{
+	margin-top:3%;
+    margin-left: 60%;
+    width:125%;
+	height:auto;
+	
+}
+
+
+
+
+
 /*Contact form*/
 
 .font {
@@ -179,7 +190,7 @@ a{
   height: 150px;
 }
 .submit{
-	color:black;
+  color:black;
   border-radius:5px;
   padding:10px;
   background-color: #FFFFFF;  
