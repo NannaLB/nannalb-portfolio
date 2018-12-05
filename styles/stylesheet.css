@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    height: 0;
+	background:black;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+	 font-weight: 100;
+ 	text-transform: uppercase;
+}
+
+
+/*Frontpage styles*/
+#frontpage{
+    background: black;
+}
+#header {
+    margin-left: 0px;
+}
+header, img {
+    height: 5%;
+    width: 5%;
+    align-content: center;
+    margin-left: 47.5%;
+    margin-top: 3%;
+}
+.name, h1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    margin-top: 10%;
+}
+.name, h2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: 2em;    
+}
+
+
+/*Projects site*/
+.headline{
+	margin-top: -8%;
+}
+
+
+figure img{
+	width:100%;
+	height:auto;
+    margin-left:0;
+    transition: transform .4s; }
+ 
+.column-img{
+	display: flex;	
+}
+
+img {
+  transition: filter .4s ease-in-out;
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+}
+img:hover {
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+	
+}
+
+figure img:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+	
+}
+
+#imagewrapper{
+	display: flex;
+	position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#imagewrapper .dream{
+	display: block;
+}
+
+ 
+#imagewrapper .link{
+	height:10%;
+	width:25%;
+	font-size: 25px;
+    opacity: 0;
+    position: absolute;
+    bottom: 15%;
+    left: -75%;
+    right: 0px;
+    padding: 2px 0px;
+    color: #C9292C;
+    background: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: opacity 400ms;
+    -moz-transition: opacity 400ms;
+    -o-transition: opacity 400ms;
+    transition: opacity 400ms;
+    
+}
+
+
+
+
+
+#imagewrapper:hover .link {
+    opacity: 0.8;
+}
+
+
+/*Individulal projects*/
+
+.img-process{
+	display: flex;
+	width:50%;
+	height:auto;
+}
+
+
+.proces{
+	width:50%;
+	height:auto;
+    margin-left:0;
+}
+
+
+
+
+/*Footer*/
+footer {
+    color: white;
+    text-align: center;
+	position : absolute;
+    bottom : 0;
+    height : 5%;
+    margin-top : 5%;
+	margin-left:45%;
+	
+}
