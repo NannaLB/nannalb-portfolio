@@ -32,14 +32,18 @@ header, img {
 
 
 .headline h1{
+	width:100%;
 	color:white;
-    align-content: center;
-    margin-left: 36%;
+    text-align: center;
+ 
     margin-top: 3%;
 	margin-bottom: 3%;
 	font-size:2em;
 }
-	
+
+
+
+
 
 /*Individulal projects*/
 
@@ -87,7 +91,7 @@ header, img {
 }
 .documentation{
 	width:22%;
-	margin-right: 14%;
+	margin-right: 10%;
 	float:right;
 	text-align: center;
 	
@@ -115,6 +119,152 @@ p, a{
 
 a{
 	text-underline-position: below;
+}
+
+
+/*Contact form*/
+
+.font {
+  font-size: 18px;
+  font-family:'Lora', serif;
+
+
+}
+.form {
+  text-align: center; 
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+.shadow{
+  opacity: 0.5;
+  border-radius: 100px;
+  width: 45%; 
+  margin: 40px auto 0 auto;
+  padding: 0 10px;  
+  
+}
+.field-in {
+  display: block;
+  margin: 30px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.name, .email, .message {
+  background-color: #ACACAC;  
+  border-bottom: 5px solid #898989;
+
+
+ 
+}
+.name:hover, .email:hover {
+  background-color: #8D5E47;
+  border-bottom: 5px solid #917162;
+
+}
+.name:focus, .email:focus, .message:focus{
+  outline: none;
+  padding:15px;
+}
+
+
+.message:hover{
+  background-color: #8D5E47;
+  border-bottom: 5px solid #917162;
+  height: 150px;
+}
+.submit{
+	color:black;
+  border-radius:5px;
+  padding:10px;
+  background-color: #FFFFFF;  
+  border: none;
+  border-bottom: 5px solid #898989;  
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.submit:hover{
+  -webkit-transform: translate(0, 4px);
+ transform:translate(0, 4px);
+  border-bottom: 2px solid #898989;  
+  box-shadow: inset 0px 0px 10px 10px #898989;
+  cursor: pointer;
+}
+::-webkit-input-placeholder {
+   color: black;
+}
+
+:-moz-placeholder { 
+   color: white;
+}
+
+::-moz-placeholder { 
+   color: white; 
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+@-webkit-keyframes bounce{
+  0%{
+    transform: none;
+  }
+  50%{
+	  
+    -webkit-transform: translate(0, 8px);
+	  transform: translate(0, 8px);
+  }
+}
+@-moz-keyframes bounce{
+  0%{
+    
+  }
+  50%{
+    -moz-transform: translate(0, 8px);
+	  transform: translate(0, 8px);
+  }
+}
+@keyframes bounce{
+  0%{
+    
+  }
+  50%{
+    transform: translate(0, 8px);
+  }
+}
+@-webkit-keyframes shadow{
+  0%{
+    
+  }
+  50%{
+    opacity: 0.8;
+    width: 50%;
+  }
+}
+@-moz-keyframes shadow{
+  0%{
+    
+  }
+  50%{
+    opacity: 0.8;
+    width: 50%;
+  }
+}
+@keyframes shadow{
+  0%{
+    
+  }
+  50%{
+    opacity: 0.8;
+    width: 50%;
+  }
 }
 
 
