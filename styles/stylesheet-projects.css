@@ -38,6 +38,33 @@ header, img {
 }
 
 
+.close {
+  position: absolute;
+  right: 3%;
+  top: 7%;
+  width: 2%;
+  height: 2%;
+  color: white;
+	opacity:0.5;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #FFFFFF;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
 
 
 
@@ -143,13 +170,13 @@ a{
 }
 .form {
   text-align: center; 
-  -webkit-animation: bounce 2s infinite;
+  /*-webkit-animation: bounce 2s infinite;
   -moz-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+  animation: bounce 2s infinite;*/
 }
 .shadow{
   opacity: 0.5;
-  border-radius: 100px;
+  border-radius: 50px;
   width: 45%; 
   margin: 40px auto 0 auto;
   padding: 0 10px;  
@@ -157,25 +184,25 @@ a{
 }
 .field-in {
   display: block;
-  margin: 30px auto;
+  margin: 25px auto;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 2px;
   border: none;
-  width: 50%;
+  width: 40%;
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 .name, .email, .message {
-  background-color: #ACACAC;  
-  border-bottom: 5px solid #898989;
+  background-color: #D9D9D9;  
+  border-bottom: 3px solid #B4B4B4;
 
 
  
 }
 .name:hover, .email:hover {
-  background-color: #8D5E47;
-  border-bottom: 5px solid #917162;
+  background-color: #A4806F;
+  border-bottom: 5px solid #846759;
 
 }
 .name:focus, .email:focus, .message:focus{
@@ -185,17 +212,17 @@ a{
 
 
 .message:hover{
-  background-color: #8D5E47;
-  border-bottom: 5px solid #917162;
-  height: 150px;
+  background-color:#A4806F;
+  border-bottom: 5px solid #846759;
+  height: 115px;
 }
 .submit{
   color:black;
-  border-radius:5px;
-  padding:10px;
+  border-radius:2px;
+  padding:5px;
   background-color: #FFFFFF;  
   border: none;
-  border-bottom: 5px solid #898989;  
+  border-bottom: 3px solid #898989;  
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -203,8 +230,8 @@ a{
 .submit:hover{
   -webkit-transform: translate(0, 4px);
  transform:translate(0, 4px);
-  border-bottom: 2px solid #898989;  
-  box-shadow: inset 0px 0px 10px 10px #898989;
+  border-bottom: 2px solid #A4806F;  
+  box-shadow: inset 0px 0px 5px 5px#A4806F;
   cursor: pointer;
 }
 ::-webkit-input-placeholder {
@@ -223,33 +250,9 @@ a{
    color: white;  
 }
 
-@-webkit-keyframes bounce{
-  0%{
-    transform: none;
-  }
-  50%{
-	  
-    -webkit-transform: translate(0, 8px);
-	  transform: translate(0, 8px);
-  }
-}
-@-moz-keyframes bounce{
-  0%{
-    
-  }
-  50%{
-    -moz-transform: translate(0, 8px);
-	  transform: translate(0, 8px);
-  }
-}
-@keyframes bounce{
-  0%{
-    
-  }
-  50%{
-    transform: translate(0, 8px);
-  }
-}
+
+
+
 @-webkit-keyframes shadow{
   0%{
     
@@ -277,6 +280,147 @@ a{
     width: 50%;
   }
 }
+
+
+
+
+
+
+
+/*Menu navigation button*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+
+body {
+
+  overflow-x: hidden;
+}
+
+/*rund menu knap størrelse og placering på skærmen*/
+label .menu {
+  position: fixed;
+  right: 46.75%;
+  top: 80%;
+  z-index: 100;
+  width: 6%;
+  height:11%;
+  background: #FFF;
+  border-radius: 50% 50% 50% 50%;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  cursor: pointer;
+}
+
+/*placering af selve burgermenu i midten*/
+label .hamburger {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width:40%;
+  height: 2px;
+  background: #000;
+  display: block;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transition: .5s ease-in-out;
+}
+label .hamburger:after, label .hamburger:before {
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+/*placering af stregerne i burgermenu*/
+label .hamburger:before {
+  top: -10px;
+}
+label .hamburger:after {
+  bottom: -10px;
+}
+label input {
+  display: none;
+}
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+  border-radius: 0;
+}
+
+
+/*hvor langt krydset drejer om sig selv indtil, 'luk' tilstand*/
+label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  bottom: 0;
+}
+label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 0;
+}
+
+
+/*menu teksten*/
+label input:checked + .menu + ul {
+  opacity: 10;
+  font-size:3em;
+	 font-family: 'Montserrat', sans-serif;
+	 font-weight: 100;
+	list-style: none;
+	text-align: center;
+	margin-top:-2%;
+}
+
+/*menuteksten lige når der trykkes på 'luk'*/
+label ul {
+  z-index: 200;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  list-style: none;
+  transition: .25s 0s ease-in-out;
+}
+
+/*selve menu-tekst, farve osv*/
+label a {
+  margin-bottom: 1em;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+label a:hover{
+	text-decoration: underline #917162;
+	 -ms-transform: scale(1.3); /* IE 9 */
+    -webkit-transform: scale(1.3) ; /* Safari 3-8 */
+    transform: scale(1.3);
+	
+	 -ms-transition:transform 0.4s ease-in-out;
+	-webkit-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+	
+}
+
+
 
 
 
