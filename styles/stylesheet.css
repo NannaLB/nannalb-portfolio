@@ -5,35 +5,28 @@ body {
     font-family: 'Lora', serif;
     margin: 0;
     height: 0;
-	background:black;
-	/*If video dosent work*/
-  background-attachment: fixed;
-  background-size: cover;
+    background: black;
+    /*If video dosent work*/
+    background-attachment: fixed;
+    background-size: cover;
 }
-	
-
-
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-	 font-weight: 100;
- 	text-transform: uppercase;
+    font-weight: 100;
+    text-transform: uppercase;
 }
-
-
 /*Frontpage styles*/
-#frontpage{
+#frontpage {
     background: rgba(0,0,0,0.8);
 }
-
-img, #logo{
-	transition: none;
-	transform: none;
+img, #logo {
+    transition: none;
+    transform: none;
     width: 10%;
     align-content: center;
     margin-left: 45%;
     margin-top: 1%;
-	filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 .name, h1 {
     width: 100%;
@@ -41,416 +34,221 @@ img, #logo{
     text-align: center;
     color: white;
     font-size: 2.1em;
-	margin-top:-12%;
-  
+    margin-top: -12%;
 }
 .name, h2 {
     width: 100%;
     height: auto;
     text-align: center;
     color: white;
-    font-size: 1.7em;    
+    font-size: 1.7em;
 }
 
 
 /*Projects site*/
 
-a{
-	position: relative;
-
+a {
+    position: relative;
 }
+a span {
+    display: none;
+    position: absolute;
+    top: 80%;
+    margin-left: 12%;
+    width: 75%;
+    background: black;
+    color: #ddd;
+    padding: 6px 0 6px 0;
+    text-align: center;
+	
 
-
-a span{
-  display: none;
-  position: absolute;
-  top:80%;
-  margin-left: 3%;
-  width:92%;
-  background:black;
-  color: #ddd;
-  padding: 3px 0 3px 0;
-  text-align: center;
+	
 }
-
-a:hover span{
-	display: block;
+a:hover span {
+    display: block;
+	
 }
-
-
-
 img {
-	width:65%;
-	height:auto;
-	 margin-left:17.5%;
-	margin-bottom:15%;
-    transition: transform .4s; 
-
+    width: 65%;
+    height: auto;
+    margin-left: 17.5%;
+    margin-bottom: 15%;
+    transition: transform .4s;
+	
 }
-
-
 img {
-  transition: filter .4s ease-in-out;
-  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-  filter: grayscale(100%); /* FF 35+ */
+    transition: filter .4s ease-in-out;
+    -webkit-filter: grayscale(80%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(80%); /* FF 35+ */
 }
-
-a span, 
+a span, img:hover {
+    -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%); /* FF 35+ */
+}
 img:hover {
-	 
-  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-  filter: grayscale(0%); /* FF 35+ */
-	
-}
-
-img:hover{
-	
     -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1) ; /* Safari 3-8 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1);
-	
-	 -ms-transition:transform 0.4s ease-in-out;
-	-webkit-transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-   
+    -ms-transition: transform 0.4s ease-in-out;
+    -webkit-transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 	
 }
-
-#imagewrapper{
-	display: flex;
-	flex-wrap: wrap;
-	position: relative;
+#imagewrapper {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
     width: 100%;
     height: 100%;
-	justify-content: center;
+    justify-content: center;
+	
 }
-
-#imagewrapper .bottom-box-left{
-	margin-right:14%;
-
+#imagewrapper .bottom-box-left {
+    margin-right: 14%;
+	
 }
-
 #imagewrapper.bottom-box-right {
-	margin-left:14%;
+    margin-left: 14%;
 }
-
-/*Individulal projects*/
-
-.img-process{
-	display: flex;
-	width:50%;
-	height:auto;
-}
-
-
-.proces{
-	width:50%;
-	height:auto;
-    margin-left:0;
-}
-
-
-
-
 
 
 /*Footer*/
 footer {
     color: white;
     text-align: center;
-	position : absolute;
+    position : absolute;
     bottom : 0;
     height : 5%;
     margin-top : 5%;
-	margin-left:42.5%;
-	
+    margin-left: 43%;
 }
-
-
 
 
 /*Menu navigation button*/
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+*, *:before, *:after {
+    box-sizing: border-box;
 }
-
-
-
 body {
-
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
-
 /*rund menu knap størrelse og placering på skærmen*/
 label .menu {
-  position: absolute;
-  right: 46.75%;
-  top: 80%;
-  z-index: 100;
-  width: 6%;
-  height:11%;
-  background: #FFF;
-  border-radius: 50% 50% 50% 50%;
-  transition: .5s ease-in-out;
-  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
-  cursor: pointer;
+    position: absolute;
+    right: 46.75%;
+    top: 80%;
+    z-index: 100;
+    width: 6%;
+    height: 11%;
+    background: #FFF;
+    border-radius: 50% 50% 50% 50%;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+    cursor: pointer;
 }
-
 /*placering af selve burgermenu i midten*/
 label .hamburger {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  width:40%;
-  height: 2px;
-  background: #000;
-  display: block;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  transition: .5s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 40%;
+    height: 2px;
+    background: #000;
+    display: block;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    transition: .5s ease-in-out;
 }
 label .hamburger:after, label .hamburger:before {
-  transition: .5s ease-in-out;
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #000;
+    transition: .5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
 }
-
 /*placering af stregerne i burgermenu*/
 label .hamburger:before {
-  top: -10px;
+    top: -10px;
 }
 label .hamburger:after {
-  bottom: -10px;
+    bottom: -10px;
 }
-label input {
-  display: none;
+label input, ul {
+    display: none;
 }
 label input:checked + .menu {
-  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
-  border-radius: 0;
+    box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+    border-radius: 0;
 }
-
-
 /*hvor langt krydset drejer om sig selv indtil, 'luk' tilstand*/
 label input:checked + .menu .hamburger {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 label input:checked + .menu .hamburger:after {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  bottom: 0;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
 }
 label input:checked + .menu .hamburger:before {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  top: 0;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
 }
-
-
 /*menu teksten*/
 label input:checked + .menu + ul {
-  opacity: 10;
-  font-size:3em;
-	 font-family: 'Montserrat', sans-serif;
-	 font-weight: 100;
-	list-style: none;
-	text-align: center;
-	margin-top:-2%;
+    opacity: 10;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    list-style: none;
+    text-align: center;
+    margin-top: -2%;
+    display: block;
 }
-
 /*menuteksten lige når der trykkes på 'luk'*/
 label ul {
-  z-index: 200;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 100;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  opacity: 0;
-  list-style: none;
-  transition: .25s 0s ease-in-out;
+    z-index: 200;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    list-style: none;
+    transition: .25s 0s ease-in-out;
 }
-
 /*selve menu-tekst, farve osv*/
 label a {
-  margin-bottom: 1em;
-  display: block;
-  color: black;
-  text-decoration: none;
+    margin-bottom: 1em;
+    display: block;
+    color: black;
+    text-decoration: none;
 }
-label a:hover{
-	text-decoration: underline #917162;
-	 -ms-transform: scale(1.3); /* IE 9 */
-    -webkit-transform: scale(1.3) ; /* Safari 3-8 */
+label a:hover {
+    text-decoration: underline #917162;
+    -ms-transform: scale(1.3); /* IE 9 */
+    -webkit-transform: scale(1.3); /* Safari 3-8 */
     transform: scale(1.3);
-	
-	 -ms-transition:transform 0.4s ease-in-out;
-	-webkit-transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-	
+    -ms-transition: transform 0.4s ease-in-out;
+    -webkit-transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
-
-
-
-
-
-
 /*Video Background fullscreen*/
 
 #video-background {
-
-  position: fixed;
-  right: 0; 
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  width: auto; 
-  height: auto;
-  z-index: -100;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
 }
-
-
-
-
-
-
-
-
-/*Menu på project-site*/
-
-/*rund menu knap størrelse og placering på skærmen*/
-label .project-menu {
-  position: absolute;
-  right: 46.75%;
-  top:85%;
-  z-index: 100;
-  width: 6%;
-  height:11%;
-  background: #FFF;
-  border-radius: 50% 50% 50% 50%;
-  transition: .5s ease-in-out;
-  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
-  cursor: pointer;
-}
-
-/*placering af selve burgermenu i midten*/
-label .hamburger {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  width:40%;
-  height: 2px;
-  background: #000;
-  display: block;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  transition: .5s ease-in-out;
-}
-label .hamburger:after, label .hamburger:before {
-  transition: .5s ease-in-out;
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #000;
-}
-
-/*placering af stregerne i burgermenu*/
-label .hamburger:before {
-  top: -10px;
-}
-label .hamburger:after {
-  bottom: -10px;
-}
-label input {
-  display: none;
-}
-label input:checked + .project-menu {
-  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
-  border-radius: 0;
-}
-
-
-/*hvor langt krydset drejer om sig selv indtil, 'luk' tilstand*/
-label input:checked + .project-menu .hamburger {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-label input:checked + .project-menu .hamburger:after {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  bottom: 0;
-}
-label input:checked + .project-menu .hamburger:before {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  top: 0;
-}
-
-
-/*menu teksten*/
-label input:checked + .project-menu + ul {
-  opacity: 10;
-  font-size:3em;
-	 font-family: 'Montserrat', sans-serif;
-	 font-weight: 100;
-	list-style: none;
-	text-align: center;
-	margin-top:-2%;
-}
-
-/*menuteksten lige når der trykkes på 'luk'*/
-label ul {
-  z-index: 200;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 100;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  opacity: 0;
-  list-style: none;
-  transition: .25s 0s ease-in-out;
-}
-
-/*selve menu-tekst, farve osv*/
-label a {
-  margin-bottom: 1em;
-  display: block;
-  color: black;
-  text-decoration: none;
-}
-label a:hover{
-	text-decoration: underline #917162;
-	 -ms-transform: scale(1.3); /* IE 9 */
-    -webkit-transform: scale(1.3) ; /* Safari 3-8 */
-    transform: scale(1.3);
-	
-	 -ms-transition:transform 0.4s ease-in-out;
-	-webkit-transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-	
-}
-
-
-
-
-
-
-
