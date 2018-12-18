@@ -75,6 +75,15 @@ img, #logo {
 /*Individulal projects*/
 
 
+.img-process{
+	
+display:block;
+	float: left;
+	width:60%;
+	margin-left:-25%;
+	margin-top:3%;
+}
+
 .collage-proces {
     width: 45%;
     margin-left: 53%;
@@ -146,11 +155,11 @@ a {
     margin-top: -5%;
     width: 35%;
     height: auto;
-    ;
+    
     z-index: -1;
 }
 
-.img-process {
+.img-timeline {
     display: flex; 
     width: 100%;
     height: auto;
@@ -158,9 +167,9 @@ a {
 }
 .cv-timeline {
 	display: inline-flex;
-	margin-left: 4%;
-    width:92%;
-   height:80%;
+	margin-left: 8%;
+    width:82%;
+    height:80%;
 	margin-bottom:8%;
 }
 #aboutme {
@@ -450,6 +459,18 @@ label a:hover {
 label .menu {
     height: 10%;
 }
+	#scroll{
+		display:none;
+	}
+	#aboutme{
+		font-size:1em;
+	}
+	.cv-timeline{
+		margin-top:10%;
+	}
+	#portrait{
+		margin-top: 0.5%;
+	}
 }
 
 @media screen and (max-width: 1150px) {
@@ -465,6 +486,9 @@ label .menu {
     height: 9%;
     width: 7%
 }
+	#portrait{
+		margin-top: 1.5%;
+	}
 	
 }
 
@@ -482,6 +506,9 @@ label .menu {
     width: 9%;
     right: 45%;
 }
+	#portrait{
+		margin-top: 2.5%;
+	}
 
 }
 
@@ -493,6 +520,9 @@ label .menu {
 footer {
     display: none;
 }
+	#aboutme{
+		font-size:0.75em;
+	}
 	
 }
 
