@@ -6,23 +6,35 @@
 body {
     font-family: 'Lora', serif;
     margin: 0;
-    height: 0;
     background: black;
-    /*If video dosent work*/
-    background-attachment: fixed;
-    background-size: cover;
+    height: 100%;
+    width: auto;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     text-transform: uppercase;
 }
+h1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: 2.1em;
+    margin-top: -12%;
+}
+h2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: 1.7em;
+}
 /*Frontpage styles*/
 
 
 .header {
     display: block;
-    justify-content: center;
     width: 100%;
     text-align: center
 }
@@ -32,23 +44,8 @@ img, #logo {
     margin-top: 1%;
     filter: grayscale(0%);
     display: block;
-    width: 5%;
-    margin-left: 47.5%;
-}
-.name, h1 {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    color: white;
-    font-size: 2.1em;
-    margin-top: -12%;
-}
-.name, h2 {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    color: white;
-    font-size: 1.7em;
+    width: 4%;
+    margin-left: 47.75%;
 }
 /*Projects site*/
 
@@ -68,6 +65,10 @@ a span {
 }
 a:hover span {
     display: block;
+    text-decoration: underline #917162;
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
 }
 img {
     width: 65%;
@@ -113,18 +114,13 @@ img:hover {
 #footer {
     position: absolute;
     bottom: 0%;
-	padding: 15px 0 10px 0;
+    padding: 15px 0 10px 0;
     color: white;
     text-align: center;
     width: 100%;
-	margin-bottom:0%;
-	font-size: 0.9em;
-	
+    margin-bottom: 0%;
+    font-size: 0.9em;
 }
-
-
-
-
 /*Menu navigation button*/
 
 *, *:before, *:after {
@@ -143,7 +139,7 @@ label .menu {
     height: 10%;
     background: #FFF;
     border-radius: 50% 50% 50% 50%;
-    transition: .5s ease-in-out;
+    transition: 0.4s ease-in-out;
     box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
     cursor: pointer;
 }
@@ -200,7 +196,7 @@ label input:checked + .menu .hamburger:before {
 }
 /*menu teksten*/
 label input:checked + .menu + ul {
-    opacity: 10;
+    opacity: 5;
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
@@ -241,58 +237,28 @@ label a:hover {
     -webkit-transition: transform 0.4s ease-in-out;
     transition: transform 0.4s ease-in-out;
 }
-/*Video Background fullscreen*/
-
-#video-background {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    z-index: -100;
-    background-position: cover;
-}
-.name, h1 {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    color: white;
-    font-size: 2.1em;
-    margin-top: -12%;
-}
-.name, h2 {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    color: white;
-    font-size: 1.7em;
-}
-
-
-/*@media screen and (max-width: 1930px){
-	#video-background{
-		width:100%;
-		height:80%;
-		margin-bottom: 10%;
-	
-}*/
 
 @media screen and (max-width: 1300px) {
 label .menu {
-    height: 10%;
+    height: 9%;
+	right:47%;
+	
 }
+	#imagewrapper .bottom-box-left {
+    margin-right: 0%;
+}
+#imagewrapper.bottom-box-right {
+    margin-left: 0%;
+}
+	
 }
 
 @media screen and (max-width: 1150px) {
 label .menu {
     height: 9%;
-    width: 7%
+    width: 7%;
+		right:46.5%;
 }
-	#video-background{
-		width:100%;
-		margin-bottom:7%;
-		
-	}
 }
 
 @media screen and (max-width: 1000px) {
@@ -300,15 +266,6 @@ label .menu {
     height: 9%;
     width: 7%
 }
-	#video-background{
-		width:100%;
-		height:80%;
-		margin-bottom: 15%;
-		
-		
-		
-	}
-
 }
 
 @media screen and (max-width: 900px) {
@@ -323,20 +280,13 @@ label .menu {
 .name, h2 {
     font-size: 1.5em;
 }
-	#video-background{
-		width:100%;
-		height:80%;
-		margin-bottom:15%;
-		margin-top:10%;
-		
-	}
 }
 
 @media screen and (max-width: 800px) {
 label .menu {
     height: 9%;
     width: 9%;
-    right: 45%;
+    right: 12%;
 }
 .name, h1 {
     font-size: 1.7em;
@@ -345,20 +295,6 @@ label .menu {
 .name, h2 {
     font-size: 1.3em;
 }
-	#video-background{
-		height:100%;
-		margin-bottom:15%;
-		margin-top:15%;
-		
-	}
-	
-}
-@media screen and (max-width: 650px){
-	#video-background{
-		width: 100%;
-		margin-bottom:20%;
-		margin-top:20%;
-	}
 }
 
 
@@ -377,10 +313,6 @@ footer {
 .name, h2 {
     font-size: 1.2em;
 }
-	#video-background{
-		margin-bottom:28%;
-		margin-top:28%;
-	}
 }
 
 @media screen and (max-width: 500px) {
@@ -395,9 +327,6 @@ label .menu {
 .name, h2 {
     font-size: 1.1em;
 }
-	#video-background{
-		display: none;
-	}
 }
 
 @media screen and (max-width: 400px) {

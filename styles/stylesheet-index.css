@@ -1,0 +1,379 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    font-family: 'Lora', serif;
+   margin:0;
+  
+    background: black;
+    /*If video dosent work*/
+   background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
+    background-image: url("../images/office-image.gif");
+    background-position: center;
+	
+	
+	
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+/*Frontpage styles*/
+
+
+.header {
+    display: block;
+    width: 100%;
+    text-align: center
+}
+img, #logo {
+    transition: none;
+    transform: none;
+    margin-top: 1%;
+    filter: grayscale(0%);
+    display: block;
+    width: 4%;
+    margin-left: 47.75%;
+}
+.name, h1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: 2.2em;
+    margin-top: -10%;
+}
+
+.name, h2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: 1.8em;
+}
+/*Projects site*/
+
+a {
+    position: relative;
+}
+a span {
+    display: none;
+    position: absolute;
+    top: 80%;
+    margin-left: 12%;
+    width: 75%;
+    background: black;
+    color: #ddd;
+    padding: 6px 0 6px 0;
+    text-align: center;
+}
+a:hover span {
+    display: block;
+    text-decoration: underline #917162;
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+img {
+    width: 65%;
+    height: auto;
+    margin-left: 17.5%;
+    margin-bottom: 15%;
+    transition: transform .4s;
+}
+img {
+    transition: filter .4s ease-in-out;
+    -webkit-filter: grayscale(80%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(80%); /* FF 35+ */
+}
+a span, img:hover {
+    -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%); /* FF 35+ */
+}
+img:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+    -ms-transition: transform 0.4s ease-in-out;
+    -webkit-transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+}
+#imagewrapper {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+#imagewrapper .bottom-box-left {
+    margin-right: 14%;
+}
+#imagewrapper.bottom-box-right {
+    margin-left: 14%;
+}
+/*Footer*/
+
+
+#footer {
+    position: absolute;
+    bottom: 0%;
+    padding: 15px 0 10px 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0%;
+    font-size: 0.9em;
+}
+/*Menu navigation button*/
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+/*rund menu knap størrelse og placering på skærmen*/
+label .menu {
+    position: absolute;
+    right: 47.5%;
+    top: 82.5%;
+    z-index: 100;
+    width: 5.5%;
+    height: 10%;
+    background: #FFF;
+    border-radius: 50% 50% 50% 50%;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+    cursor: pointer;
+}
+/*placering af selve burgermenu i midten*/
+label .hamburger {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 40%;
+    height: 2px;
+    background: #000;
+    display: block;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    transition: .5s ease-in-out;
+}
+label .hamburger:after, label .hamburger:before {
+    transition: .5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+/*placering af stregerne i burgermenu*/
+label .hamburger:before {
+    top: -10px;
+}
+label .hamburger:after {
+    bottom: -10px;
+}
+label input, ul {
+    display: none;
+}
+label input:checked + .menu {
+    box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+    border-radius: 0;
+}
+/*hvor langt krydset drejer om sig selv indtil, 'luk' tilstand*/
+label input:checked + .menu .hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+label input:checked + .menu .hamburger:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
+}
+label input:checked + .menu .hamburger:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+}
+/*menu teksten*/
+label input:checked + .menu + ul {
+    opacity: 5;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    list-style: none;
+    text-align: center;
+    margin-top: -2%;
+    display: block;
+}
+/*menuteksten lige når der trykkes på 'luk'*/
+label ul {
+    z-index: 200;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    list-style: none;
+    transition: .25s 0s ease-in-out;
+}
+/*selve menu-tekst, farve osv*/
+label a {
+    margin-bottom: 1em;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+label a:hover {
+    text-decoration: underline #917162;
+    -ms-transform: scale(1.3); /* IE 9 */
+    -webkit-transform: scale(1.3); /* Safari 3-8 */
+    transform: scale(1.3);
+    -ms-transition: transform 0.4s ease-in-out;
+    -webkit-transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+}
+
+	
+
+.name, h1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: 2.1em;
+    margin-top: -12%;
+}
+.name, h2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: 1.7em;
+}
+
+@media screen and (max-width: 1300px) {
+label .menu {
+    height: 10%;
+}
+}
+
+@media screen and (max-width: 1150px) {
+label .menu {
+    height: 9%;
+    width: 7%
+}
+
+}
+
+@media screen and (max-width: 1000px) {
+label .menu {
+    height: 9%;
+    width: 7%
+}
+
+}
+
+@media screen and (max-width: 900px) {
+label .menu {
+    height: 9%;
+    width: 8%
+}
+.name, h1 {
+    font-size: 1.9em;
+    margin-top: -10%;
+}
+.name, h2 {
+    font-size: 1.5em;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+label .menu {
+    height: 9%;
+    width: 9%;
+    right: 45%;
+}
+.name, h1 {
+    font-size: 1.7em;
+    margin-top: -8%;
+}
+.name, h2 {
+    font-size: 1.3em;
+}
+
+}
+
+@media screen and (max-width: 650px) {
+
+}
+
+@media screen and (max-width: 600px) {
+label .menu {
+    height: 9%;
+    width: 11%;
+}
+footer {
+    display: none;
+}
+.name, h1 {
+    font-size: 1.6em;
+    margin-top: -6%;
+}
+.name, h2 {
+    font-size: 1.2em;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+label .menu {
+    height: 9%;
+    width: 13%;
+    right: 44%;
+}
+.name, h1 {
+    font-size: 1.5em;
+}
+.name, h2 {
+    font-size: 1.1em;
+}
+
+}
+
+@media screen and (max-width: 400px) {
+label .menu {
+    height: 9%;
+    width: 17%;
+    right: 42%;
+}
+}
+
+@media screen and (max-width: 300px) {
+label .menu {
+    height: 9%;
+    width: 22%;
+    right: 40%;
+}
+}
+
+@media screen and (max-width: 200px) {
+label .menu {
+    height: 10%;
+    width: 25%;
+    right: 38%
+}
+}
