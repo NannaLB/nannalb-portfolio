@@ -47,6 +47,15 @@ img, #logo {
     width: 4%;
     margin-left: 47.75%;
 }
+
+.headline h1 {
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: -12.5%;
+    margin-bottom: 3%;
+	font-size: 2em;}
+	
 /*Projects site*/
 
 a {
@@ -204,6 +213,7 @@ label input:checked + .menu + ul {
     text-align: center;
     margin-top: -2%;
     display: block;
+	
 }
 /*menuteksten lige når der trykkes på 'luk'*/
 label ul {
@@ -240,10 +250,15 @@ label a:hover {
 
 @media screen and (max-width: 1300px) {
 label .menu {
-    height: 9%;
-	right:47%;
-	
+   
+    height: 10%;	
 }
+	
+	label input:checked + .menu + ul{
+		
+		margin-left: -1.5%;
+	}
+	
 	#imagewrapper .bottom-box-left {
     margin-right: 0%;
 }
@@ -264,7 +279,8 @@ label .menu {
 @media screen and (max-width: 1000px) {
 label .menu {
     height: 9%;
-    width: 7%
+    width: 7%;
+		
 }
 }
 
@@ -273,6 +289,7 @@ label .menu {
     height: 9%;
     width: 8%
 }
+	
 .name, h1 {
     font-size: 1.9em;
     margin-top: -10%;
@@ -284,10 +301,15 @@ label .menu {
 
 @media screen and (max-width: 800px) {
 label .menu {
-    height: 9%;
+    height: 7%;
     width: 9%;
-    right: 12%;
+    right: 46%;
 }
+	label input:checked + .menu + ul{
+		font-size:1.9em;
+		margin-left: -2.5%;
+	}
+	
 .name, h1 {
     font-size: 1.7em;
     margin-top: -8%;
@@ -302,6 +324,11 @@ label .menu {
 label .menu {
     height: 9%;
     width: 11%;
+	right:45%;
+}
+	label input:checked + .menu + ul{
+		font-size:1.8em;
+	margin-left: -5%;}
 }
 footer {
     display: none;
@@ -313,14 +340,18 @@ footer {
 .name, h2 {
     font-size: 1.2em;
 }
-}
+
 
 @media screen and (max-width: 500px) {
 label .menu {
-    height: 9%;
+    height: 7%;
     width: 13%;
     right: 44%;
 }
+	label input:checked + .menu + ul{
+		font-size:1.7em;
+	margin-left: -3.5%;}
+	
 .name, h1 {
     font-size: 1.5em;
 }
@@ -333,8 +364,11 @@ label .menu {
 label .menu {
     height: 9%;
     width: 17%;
-    right: 42%;
+    right: 41%;
 }
+	label input:checked + .menu + ul{
+		font-size:1.4em;
+	margin-left: -5%;}
 }
 
 @media screen and (max-width: 300px) {
@@ -343,12 +377,15 @@ label .menu {
     width: 22%;
     right: 40%;
 }
+	label input:checked + .menu + ul{
+		font-size:1em;
+	margin-left: -8%;}
 }
 
 @media screen and (max-width: 200px) {
 label .menu {
     height: 10%;
     width: 25%;
-    right: 38%
+    right: 39%
 }
 }

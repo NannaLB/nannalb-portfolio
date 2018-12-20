@@ -4,19 +4,44 @@
 body {
     font-family: 'Lora', serif;
    margin:0;
-  
-    background: black;
+ 
     /*If video dosent work*/
-   background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: auto;
-    background-image: url("../images/office-image.gif");
-    background-position: center;
-	
-	
-	
+
+/* Background fallback in case video doens't load, such as with slower connections  */
+  background: black;
+  background-attachment: fixed;
+  background-size: cover;
 }
+
+
+
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 125%;
+    height: auto;
+ 
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+}
+
+
+
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
@@ -275,6 +300,9 @@ label .menu {
     height: 9%;
     width: 7%
 }
+	.linkedin{
+		margin-left: 54%;
+	}
 
 }
 
@@ -303,9 +331,9 @@ label .menu {
 
 @media screen and (max-width: 800px) {
 label .menu {
-    height: 9%;
+    height: 7%;
     width: 9%;
-    right: 45%;
+    right: 46%;
 }
 .name, h1 {
     font-size: 1.7em;
@@ -317,14 +345,12 @@ label .menu {
 
 }
 
-@media screen and (max-width: 650px) {
-
-}
 
 @media screen and (max-width: 600px) {
 label .menu {
     height: 9%;
     width: 11%;
+	right:45%;
 }
 footer {
     display: none;
@@ -341,10 +367,14 @@ footer {
 
 @media screen and (max-width: 500px) {
 label .menu {
-    height: 9%;
+    height: 7%;
     width: 13%;
     right: 44%;
 }
+	label input:checked + .menu + ul{
+		font-size:1.7em;
+	margin-left: -3.5%;}
+	
 .name, h1 {
     font-size: 1.5em;
 }
@@ -358,8 +388,11 @@ label .menu {
 label .menu {
     height: 9%;
     width: 17%;
-    right: 42%;
+    right: 41%;
 }
+	label input:checked + .menu + ul{
+		font-size:1.4em;
+	margin-left: -5%;}
 }
 
 @media screen and (max-width: 300px) {
@@ -368,12 +401,15 @@ label .menu {
     width: 22%;
     right: 40%;
 }
+	label input:checked + .menu + ul{
+		font-size:1em;
+	margin-left: -8%;}
 }
 
 @media screen and (max-width: 200px) {
 label .menu {
     height: 10%;
     width: 25%;
-    right: 38%
+    right: 39%
 }
 }
