@@ -250,7 +250,8 @@ label a:hover {
 
 @media screen and (max-width: 1300px) {
 label .menu {
-   
+   	position: fixed;
+	bottom:3%;
     height: 10%;	
 }
 	
@@ -286,7 +287,7 @@ label .menu {
 
 @media screen and (max-width: 900px) {
 label .menu {
-    height: 9%;
+    height: 11%;
     width: 8%
 }
 	
@@ -301,9 +302,11 @@ label .menu {
 
 @media screen and (max-width: 800px) {
 label .menu {
-    height: 7%;
-    width: 9%;
-    right: 46%;
+	position: fixed;
+	bottom:3%;
+    height: 9%;
+    width: 8%;
+    right: 47%;
 }
 	label input:checked + .menu + ul{
 		font-size:1.9em;
@@ -317,14 +320,27 @@ label .menu {
 .name, h2 {
     font-size: 1.3em;
 }
+	
+	a:hover span{
+		display:block;
+		transform:none;
+	}
+	img:hover{
+		display: block;
+		transform:none;
+	}
+	
+	a span, img:hover{
+		display:block;
+	}
 }
 
 
 @media screen and (max-width: 600px) {
 label .menu {
     height: 9%;
-    width: 11%;
-	right:45%;
+    width: 8%;
+	right:47.5%;
 }
 	label input:checked + .menu + ul{
 		font-size:1.8em;
@@ -344,9 +360,9 @@ footer {
 
 @media screen and (max-width: 500px) {
 label .menu {
-    height: 7%;
-    width: 13%;
-    right: 44%;
+    height: 8%;
+    width: 10%;
+    right: 46.5%;
 }
 	label input:checked + .menu + ul{
 		font-size:1.7em;
@@ -363,8 +379,9 @@ label .menu {
 @media screen and (max-width: 400px) {
 label .menu {
     height: 9%;
-    width: 17%;
-    right: 41%;
+    width: 13%;
+    right: 45%;
+ 
 }
 	label input:checked + .menu + ul{
 		font-size:1.4em;

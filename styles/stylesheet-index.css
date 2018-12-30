@@ -3,19 +3,13 @@
 
 body {
     font-family: 'Lora', serif;
-   margin:0;
- 
-    /*If video dosent work*/
-
-/* Background fallback in case video doens't load, such as with slower connections  */
-  background: black;
-  background-attachment: fixed;
-  background-size: cover;
+    margin: 0;
+    /*If video dosent work
+Background fallback in case video doens't load, such as with slower connections  */
+    background: black;
+    background-attachment: fixed;
+    background-size: cover;
 }
-
-
-
-
 .fullscreen-bg {
     position: fixed;
     top: 0;
@@ -25,23 +19,17 @@ body {
     overflow: hidden;
     z-index: -100;
 }
-
 .fullscreen-bg__video {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 125%;
     height: auto;
- 
     -webkit-transform: translate(-50%, -50%);
-       -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-	    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
-
-
-
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
@@ -72,7 +60,6 @@ img, #logo {
     font-size: 2.2em;
     margin-top: -10%;
 }
-
 .name, h2 {
     width: 100%;
     height: auto;
@@ -270,9 +257,6 @@ label a:hover {
     -webkit-transition: transform 0.4s ease-in-out;
     transition: transform 0.4s ease-in-out;
 }
-
-	
-
 .name, h1 {
     width: 100%;
     height: auto;
@@ -300,10 +284,9 @@ label .menu {
     height: 9%;
     width: 7%
 }
-	.linkedin{
-		margin-left: 54%;
-	}
-
+.linkedin {
+    margin-left: 54%;
+}
 }
 
 @media screen and (max-width: 1000px) {
@@ -311,7 +294,6 @@ label .menu {
     height: 9%;
     width: 7%
 }
-
 }
 
 @media screen and (max-width: 900px) {
@@ -326,7 +308,6 @@ label .menu {
 .name, h2 {
     font-size: 1.5em;
 }
-
 }
 
 @media screen and (max-width: 800px) {
@@ -342,15 +323,13 @@ label .menu {
 .name, h2 {
     font-size: 1.3em;
 }
-
 }
-
 
 @media screen and (max-width: 600px) {
 label .menu {
     height: 9%;
     width: 11%;
-	right:45%;
+    right: 45%;
 }
 footer {
     display: none;
@@ -362,7 +341,6 @@ footer {
 .name, h2 {
     font-size: 1.2em;
 }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -371,17 +349,16 @@ label .menu {
     width: 13%;
     right: 44%;
 }
-	label input:checked + .menu + ul{
-		font-size:1.7em;
-	margin-left: -3.5%;}
-	
+label input:checked + .menu + ul {
+    font-size: 1.7em;
+    margin-left: -3.5%;
+}
 .name, h1 {
     font-size: 1.5em;
 }
 .name, h2 {
     font-size: 1.1em;
 }
-
 }
 
 @media screen and (max-width: 400px) {
@@ -390,9 +367,10 @@ label .menu {
     width: 17%;
     right: 41%;
 }
-	label input:checked + .menu + ul{
-		font-size:1.4em;
-	margin-left: -5%;}
+label input:checked + .menu + ul {
+    font-size: 1.4em;
+    margin-left: -5%;
+}
 }
 
 @media screen and (max-width: 300px) {
@@ -401,9 +379,10 @@ label .menu {
     width: 22%;
     right: 40%;
 }
-	label input:checked + .menu + ul{
-		font-size:1em;
-	margin-left: -8%;}
+label input:checked + .menu + ul {
+    font-size: 1em;
+    margin-left: -8%;
+}
 }
 
 @media screen and (max-width: 200px) {

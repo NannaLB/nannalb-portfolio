@@ -116,6 +116,7 @@ img, #logo {
     width: 29%;
     margin-right: 6.5%;
     margin-top: 2.5%;
+    margin-bottom: 3%;
     float: right;
     text-align: left;
 }
@@ -151,11 +152,11 @@ a {
     height: auto;
     z-index: -1;
 }
-
 .cv-timeline {
     display: inline-flex;
-    margin-left:8%;
-    width: 84%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: auto;
     height: auto;
     margin-bottom: 8%;
 }
@@ -164,22 +165,18 @@ a {
     float: right;
     text-align: left;
     margin-right: 8%;
-    margin-top:1.5%;
-	display: block;
-	
+    margin-top: 1.5%;
+    display: block;
 }
-
-#aboutme h2{
-	color:white;
-	text-align: left;
-	margin-bottom: 2%;
-	
-	
+#aboutme h2 {
+    color: white;
+    text-align: left;
+    margin-bottom: 2%;
 }
 #scroll {
-    margin-top: 34%;
+    margin-top: 38%;
     width: 100%;
-    margin-left: -0.3%;
+  
 }
 /*Contact form*/
 
@@ -197,26 +194,20 @@ a {
     height: auto;
     display: inline-block;
     margin-left: 6%;
-	
-	
 }
 .contact-info h3 {
     line-height: 1.6;
     color: white;
     text-align: center;
     margin-left: 15%;
-	
-	
 }
 .linkedin {
     width: auto;
     height: 25%;
     margin-left: 53%;
-    margin-top:3%;
+    margin-top: 3%;
     display: block;
-	
 }
-
 .contact-form {
     text-align: center;
     float: left;
@@ -455,43 +446,36 @@ label .menu {
 label .menu {
     height: 9%;
     width: 7%;
-		right:46%;
+    right: 46%;
 }
-	.contact-info{
-		width:107%;
-		margin-top:7.5%;
-		font-size:1.4em;
-		
-		
-	}
-	
-	.contact-form{
-		width:75%;
-		margin-left:12.5%;
-	
+.contact-info {
+    width: 107%;
+    margin-top: 7.5%;
+    font-size: 1.4em;
+}
+.contact-form {
+    width: 75%;
+    margin-left: 12.5%;
+}
+#footer {
+    display: none;
+}
+.linkedin {
+    margin-left: 54%;
+}
 }
 
-	
-	#footer{
-		display: none;
-	}
-	.linkedin{
-		margin-left: 54%;
-	}
-
-}
 @media screen and (max-width: 1000px) {
 label .menu {
     height: 9%;
     width: 7%
 }
-	.linkedin{
-		margin-left: 53.5%;
-	}
+.linkedin {
+    margin-left: 53.5%;
+}
 #portrait {
     margin-top: 1.5%;
 }
-	
 }
 
 @media screen and (max-width: 900px) {
@@ -499,58 +483,52 @@ label .menu {
     height: 9%;
     width: 8%
 }
-	.linkedin{
-		margin-left: 52.5%;
-	}
-
+.linkedin {
+    margin-left: 52.5%;
+}
 }
 
 @media screen and (max-width: 800px) {
 label .menu {
     height: 7%;
     width: 9%;
-	right: 46%;}
-	
-	.linkedin {
-		margin-left: 52%;
-	}
+    right: 46%;
 }
-
-	
+.linkedin {
+    margin-left: 52%;
+}
+.close {
+    margin-left: 87.5%;
+}
+}
 #portrait {
     margin-top: 2.5%;
 }
-	#aboutme{
-		margin-top:5.5%;
-	}
-
+#aboutme {
+    margin-top: 5.5%;
+}
 
 @media screen and (max-width: 600px) {
 label .menu {
     height: 9%;
     width: 11%;
-	right:45%;
+    right: 45%;
 }
-	.linkedin {
-		margin-left: 53.5%;
-	}
-	
-	.contact-info{
-		margin-top:15%;
-		width:112.5%;
-		font-size: 0.8em;
-	}
-	
-	#animated-name{
-		width:105%;
-		margin-top:5%;
-		
-	}
+.linkedin {
+    margin-left: 53.5%;
+}
+.contact-info {
+    margin-top: 15%;
+    width: 112.5%;
+    font-size: 0.8em;
+}
+#animated-name {
+    width: 105%;
+    margin-top: 5%;
+}
 #aboutme {
     font-size: 0.75em;
 }
-	
-	
 }
 
 @media screen and (max-width: 500px) {
@@ -559,77 +537,62 @@ label .menu {
     width: 13%;
     right: 44%;
 }
-	label input:checked + .menu + ul{
-		font-size:1.7em;
-	margin-left: -3.5%;}
-	
-	#animated-name{
-		width:105%;
-		
-		margin-top:-12%;}
-	
-	.linkedin {
-		margin-left: 53%;
-	}
-	
-	#portrait{
-		width:50%;
-		margin-left:25%;
-		height:auto;
-		display: flex;
-		flex-wrap: wrap;
-	}
-	
-	#aboutme {
-		width:75%;
-		margin-top: 60%;
-		
-	}
-	#aboutme p{
-		text-align: center;
-		margin-left:-9%;
-		
-	}
-	#aboutme h2{
-		width:100%;
-	margin-left:-7%;
-		text-align: center;
-		
-	}
-	
-	.cv-timeline{
-		margin-left:10.5%;
-		width:80%;
-	}
-	
-	
-	
-	.img-process{
-		width:100%;
-	}
-	
-	.documentation{
-		width:80%;
-		text-align: center;
-	}
-	
-	article{
-		width:80%;
-		margin-left: 10%;
-		text-align: center;
-	}
-	
-	p{
-		text-align: center;
-	}
-	
-	
+label input:checked + .menu + ul {
+    font-size: 1.7em;
+    margin-left: -3.5%;
+}
+#animated-name {
+    width: 105%;
+    margin-top: -12%;
+}
+.linkedin {
+    margin-left: 53%;
+}
+#portrait {
+    width: 50%;
+    margin-left: 25%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#aboutme {
+    width: 75%;
+    margin-top: 60%;
+}
+#aboutme p {
+    text-align: center;
+    margin-left: -9%;
+}
+#aboutme h2 {
+    width: 100%;
+    margin-left: -7%;
+    text-align: center;
+}
+.cv-timeline {
+    margin-left: 10.5%;
+    width: 80%;
+}
+.img-process {
+    width: 100%;
+}
+.documentation {
+    width: 80%;
+    text-align: center;
+}
+article {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+p {
+    text-align: center;
+}
 }
 
-@media screen and (max-width: 415px){
-	.linkedin{
-		margin-left: 52%;
-	}
+@media screen and (max-width: 415px) {
+.linkedin {
+    margin-left: 52%;
+}
 }
 
 @media screen and (max-width: 400px) {
@@ -638,49 +601,45 @@ label .menu {
     width: 17%;
     right: 41%;
 }
-	label input:checked + .menu + ul{
-		font-size:1.4em;
-	margin-left: -5%;}
-	
-	#animated-name{
-		margin-top: -10%;
-	}
-	.linkedin{
-		margin-left: 52%;
-	}
+label input:checked + .menu + ul {
+    font-size: 1.4em;
+    margin-left: -5%;
 }
-
-@media screen and (max-width: 375px){
-	.linkedin{
-		margin-left: 52.5%;
-	}
-	label .menu {
+#animated-name {
+    margin-top: -10%;
+}
+.linkedin {
+    margin-left: 52%;
+}
+}
+ @media screen and (max-width: 375px) {
+.linkedin {
+    margin-left: 52.5%;
+}
+label .menu {
     height: 9%;
     width: 17%;
     right: 41%;
-		margin-top:5%;
+    margin-top: 5%;
 }
-
-@media screen and (max-width: 300px) {
+ @media screen and (max-width: 300px) {
 label .menu {
-    height: 9%;
-    width: 22%;
-    right: 40%;
+ height: 9%;
+ width: 22%;
+ right: 40%;
 }
-	label input:checked + .menu + ul{
-		font-size:1em;
-	margin-left: -8%;}
-	
-	.linkedin{
-		margin-left: 49.5%;
-	}
+ label input:checked + .menu + ul {
+ font-size:1em;
+ margin-left: -8%;
 }
-
-
-@media screen and (max-width: 200px) {
+ .linkedin {
+ margin-left: 49.5%;
+}
+}
+ @media screen and (max-width: 200px) {
 label .menu {
-    height: 10%;
-    width: 25%;
-    right: 39%
+ height: 10%;
+ width: 25%;
+ right: 39%
 }
 }
