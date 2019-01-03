@@ -224,6 +224,7 @@ label input:checked + .menu + ul {
     text-align: center;
     margin-top: -2%;
     display: block;
+	margin-left:-1.75%;
 }
 /*menuteksten lige når der trykkes på 'luk'*/
 label ul {
@@ -351,7 +352,7 @@ label .menu {
 }
 label input:checked + .menu + ul {
     font-size: 1.7em;
-    margin-left: -3.5%;
+    margin-left: -4.25%;
 }
 .name, h1 {
     font-size: 1.5em;

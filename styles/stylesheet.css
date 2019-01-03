@@ -213,6 +213,7 @@ label input:checked + .menu + ul {
     text-align: center;
     margin-top: -2%;
     display: block;
+	margin-left:-1.75%;
 	
 }
 /*menuteksten lige når der trykkes på 'luk'*/
@@ -362,7 +363,7 @@ footer {
 label .menu {
     height: 8%;
     width: 10%;
-    right: 46.5%;
+    right: 45.5%;
 }
 	label input:checked + .menu + ul{
 		font-size:1.7em;
