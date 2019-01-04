@@ -67,29 +67,7 @@ img, #logo {
     color: white;
     font-size: 1.8em;
 }
-/*Projects site*/
 
-a {
-    position: relative;
-}
-a span {
-    display: none;
-    position: absolute;
-    top: 80%;
-    margin-left: 12%;
-    width: 75%;
-    background: black;
-    color: #ddd;
-    padding: 6px 0 6px 0;
-    text-align: center;
-}
-a:hover span {
-    display: block;
-    text-decoration: underline #917162;
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2);
-}
 img {
     width: 65%;
     height: auto;
@@ -97,37 +75,8 @@ img {
     margin-bottom: 15%;
     transition: transform .4s;
 }
-img {
-    transition: filter .4s ease-in-out;
-    -webkit-filter: grayscale(80%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-    filter: grayscale(80%); /* FF 35+ */
-}
-a span, img:hover {
-    -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-    filter: grayscale(0%); /* FF 35+ */
-}
-img:hover {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1);
-    -ms-transition: transform 0.4s ease-in-out;
-    -webkit-transition: transform 0.4s ease-in-out;
-    transition: transform 0.4s ease-in-out;
-}
-#imagewrapper {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-}
-#imagewrapper .bottom-box-left {
-    margin-right: 14%;
-}
-#imagewrapper.bottom-box-right {
-    margin-left: 14%;
-}
+
+
 /*Footer*/
 
 
@@ -216,7 +165,7 @@ label input:checked + .menu .hamburger:before {
 }
 /*menu teksten*/
 label input:checked + .menu + ul {
-    opacity: 5;
+    opacity: 0.9;
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
@@ -285,9 +234,7 @@ label .menu {
     height: 9%;
     width: 7%
 }
-.linkedin {
-    margin-left: 54%;
-}
+
 }
 
 @media screen and (max-width: 1000px) {

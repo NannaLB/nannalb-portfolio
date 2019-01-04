@@ -370,7 +370,7 @@ label input:checked + .menu .hamburger:before {
 }
 /*menu teksten*/
 label input:checked + .menu + ul {
-    opacity: 4;
+    opacity: 0.9;
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
