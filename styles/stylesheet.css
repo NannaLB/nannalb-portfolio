@@ -45,7 +45,7 @@ img, #logo {
     filter: grayscale(0%);
     display: block;
     width: 4%;
-    margin-left: 47.75%;
+    margin-left: 48.5%;
 }
 
 .headline h1 {
@@ -141,7 +141,7 @@ body {
 /*rund menu knap størrelse og placering på skærmen*/
 label .menu {
     position: absolute;
-    right: 47.5%;
+    right: 47%;
     top: 82.5%;
     z-index: 100;
     width: 5.5%;

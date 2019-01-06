@@ -27,7 +27,7 @@ img, #logo {
     filter: grayscale(0%);
     display: block;
     width: 4%;
-    margin-left: 47.75%;
+    margin-left: 48.5%;
 }
 .headline h1 {
     width: 100%;
@@ -70,126 +70,53 @@ img, #logo {
     margin-left: 20%;
     margin-top: 10%;
 }
-
-
-
 /*Contact form*/
 
 .contact-info {
-    margin-right: 2.5%;
-    width: 45%;
+    text-align: center;
+    width: 100%;
     height: 200px;
-    display: inline-block;
-    float: right;
+    display: flex;
+	flex-direction: column;
+margin-top: 4%;
 }
 #animated-name {
     align-items: center;
-    margin-top: -0.5%;
-    width: 100%;
-    height: auto;
-    display: inline-block;
-    margin-left: 6%;
+    margin-top: -2%;
+    width: 65%;
+    height: 200px;
+    margin-left: 18%;
 }
 .contact-info h3 {
-    line-height: 1.6;
+    line-height: 1.7;
     color: white;
     text-align: center;
-    margin-left: 15%;
+    font-size: 1.3em;
+    font-family: Lora;
+    text-transform: none;
+}
+.contact-info h2 {
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 2.5%;
 }
 .linkedin {
-    width: auto;
-    height: 25%;
-    margin-left: 53%;
-    margin-top: 3%;
-    display: block;
-}
-.contact-form {
+    width: 4%;
+    height: auto;
     text-align: center;
-    float: left;
-    margin-left: 6.5%;
-    width: 30%;
-    display: block;
+    margin-top: 1.75%;
+	margin-left: 48.3%;
+   
 }
-.font {
-    font-size: 16px;
-    font-family: 'Lora', serif;
-}
-.shadow {
-    opacity: 0.5;
-    border-radius: 50px;
-    width: 100%;
-    margin: 40px auto 0 auto;
-    padding: 0 10px;
-}
-.field-in {
-    display: block;
-    margin: 25px auto;
-    padding: 10px;
-    border-radius: 2px;
-    border: none;
-    width: 100%;
-    -webkit-transition: all 0.5s ease 0s;
-    -moz-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;
-}
-.name, .email, .message {
-    background-color: #FFFFFF;
-    border-bottom: 3px solid #B4B4B4;
-}
-.name:hover, .email:hover {
-    background-color: #A4806F;
-    border-bottom: 5px solid #917162;
-}
-.name:focus, .email:focus, .message:focus {
-    outline: none;
-    padding: 10px;
-}
-.message:hover {
-    background-color: #A4806F;
-    border-bottom: 5px solid #917162;
-    height: 115px;
-}
-.submit {
-    width: 30%;
-    color: black;
-    border-radius: 2px;
-    padding: 0px 0px 0px 0px;
-    background-color: #FFFFFF;
-    border: none;
-    border-bottom: 3px solid #898989;
-    -webkit-transition: all 0.5s ease 0s;
-    -moz-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;
-}
-.submit:hover {
-    color: black;
-    background: #A4806F;
-    border-bottom: 3px solid #917162;
-    cursor: pointer;
-    text-decoration: underline #917162;
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2);
-    -ms-transition: transform 0.5s ease-in-out;
-    -webkit-transition: transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out;
+a, .tlf {
+    text-decoration: none;
+    color: white;
 }
 
-::-webkit-input-placeholder {
- color: black;
-}
-
-:-moz-placeholder {
- color: white;
-}
-
-::-moz-placeholder {
- color: white;
-}
-
-:-ms-input-placeholder {
- color: white;
-}
+a:hover {
+	color: #A4806F;}
 /*Menu navigation button*/
 
 *, *:before, *:after {
@@ -201,7 +128,7 @@ body {
 /*rund menu knap størrelse og placering på skærmen*/
 label .menu {
     position: fixed;
-    right: 47.5%;
+   right: 47%;
     top: 82.5%;
     z-index: 100;
     width: 5.5%;
@@ -211,6 +138,8 @@ label .menu {
     transition: .4s ease-in-out;
     box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
     cursor: pointer;
+
+	align-items: center;
 }
 /*placering af selve burgermenu i midten*/
 label .hamburger {
@@ -335,20 +264,8 @@ label .menu {
     width: 7%;
     right: 46%;
 }
-.contact-info {
-    width: 107%;
-    margin-top: 7.5%;
-    font-size: 1.4em;
-}
-.contact-form {
-    width: 75%;
-    margin-left: 12.5%;
-}
 #footer {
     display: none;
-}
-.linkedin {
-    margin-left: 54%;
 }
 }
 
@@ -357,10 +274,6 @@ label .menu {
     height: 9%;
     width: 7%
 }
-.linkedin {
-    margin-left: 53.5%;
-}
-
 }
 
 @media screen and (max-width: 900px) {
@@ -368,25 +281,31 @@ label .menu {
     height: 9%;
     width: 8%
 }
-.linkedin {
-    margin-left: 52.5%;
-}
 }
 
 @media screen and (max-width: 800px) {
 label .menu {
     height: 7%;
     width: 9%;
-    right: 46%;
-}
-.linkedin {
-    margin-left: 52%;
+    right: 45.75%;
 }
 .close {
     margin-left: 87.5%;
 }
+#animated-name {
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
 }
-
+	.contact-info{
+		margin-top:10%;
+	}
+	
+	.linkedin{
+		width:6%;
+		margin-left:47.3%;
+	}
+}
 
 @media screen and (max-width: 600px) {
 label .menu {
@@ -394,19 +313,24 @@ label .menu {
     width: 11%;
     right: 45%;
 }
-.linkedin {
-    margin-left: 53.5%;
-}
-.contact-info {
-    margin-top: 15%;
-    width: 112.5%;
-    font-size: 0.8em;
-}
-#animated-name {
-    width: 105%;
-    margin-top: 5%;
-}
+	
+	.contact-info{
+		margin-top:15%;
+	}
+	.contact-info h3 {
+    font-size: 1.1em;
 
+  
+}
+.contact-info h2 {
+    font-size: 1.3em;
+ 
+}
+	
+	.linkedin{
+		width:7%;
+		margin-left:46.5%;
+	}
 }
 
 @media screen and (max-width: 500px) {
@@ -419,20 +343,14 @@ label input:checked + .menu + ul {
     font-size: 1.7em;
     margin-left: -0.2%;
 }
-#animated-name {
-    width: 105%;
-    margin-top: -12%;
-}
-.linkedin {
-    margin-left: 53.1%;
-}
-
-}
-
-@media screen and (max-width: 415px) {
-.linkedin {
-    margin-left: 52%;
-}
+	
+	.contact-info{
+		margin-top:20%;
+	}
+.linkedin{
+		width:8%;
+		margin-left:46.5%;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -445,41 +363,49 @@ label input:checked + .menu + ul {
     font-size: 1.4em;
     margin-left: -5%;
 }
-#animated-name {
-    margin-top: -10%;
+	
+	.contact-info{
+		margin-top:25%;}
+	
+	.contact-info h3 {
+    font-size: 1em;
+
+  
 }
-.linkedin {
-    margin-left: 52%;
+.contact-info h2 {
+    font-size: 1.2em;
+ 
 }
 }
- @media screen and (max-width: 375px) {
-.linkedin {
-    margin-left: 52.5%;
-}
+
+@media screen and (max-width: 375px) {
 label .menu {
     height: 9%;
     width: 17%;
     right: 41%;
     margin-top: 5%;
-	 }}
- @media screen and (max-width: 300px) {
+}
+	
+	.contact-info{
+		margin-top:35%;
+}
+
+@media screen and (max-width: 300px) {
 label .menu {
- height: 9%;
- width: 22%;
- right: 40%;
+    height: 9%;
+    width: 22%;
+    right: 40%;
 }
- label input:checked + .menu + ul {
- font-size:1em;
- margin-left: -8%;
-}
- .linkedin {
- margin-left: 49.5%;
+label input:checked + .menu + ul {
+    font-size: 1em;
+    margin-left: -8%;
 }
 }
- @media screen and (max-width: 200px) {
+
+@media screen and (max-width: 200px) {
 label .menu {
- height: 10%;
- width: 25%;
- right: 39%;
+    height: 10%;
+    width: 25%;
+    right: 39%;
 }
 }

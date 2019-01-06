@@ -27,7 +27,7 @@ img, #logo {
     filter: grayscale(0%);
     display: block;
     width: 4%;
-    margin-left: 47.75%;
+    margin-left: 48.5%;
 }
 .headline h1 {
     width: 100%;
@@ -178,123 +178,7 @@ a {
     width: 100%;
   
 }
-/*Contact form*/
 
-.contact-info {
-    margin-right: 2.5%;
-    width: 45%;
-    height: 200px;
-    display: inline-block;
-    float: right;
-}
-#animated-name {
-    align-items: center;
-    margin-top: -0.5%;
-    width: 100%;
-    height: auto;
-    display: inline-block;
-    margin-left: 6%;
-}
-.contact-info h3 {
-    line-height: 1.6;
-    color: white;
-    text-align: center;
-    margin-left: 15%;
-}
-.linkedin {
-    width: auto;
-    height: 25%;
-    margin-left: 53%;
-    margin-top: 3%;
-    display: block;
-}
-.contact-form {
-    text-align: center;
-    float: left;
-    margin-left: 6.5%;
-    width: 30%;
-    display: block;
-}
-.font {
-    font-size: 16px;
-    font-family: 'Lora', serif;
-}
-.shadow {
-    opacity: 0.5;
-    border-radius: 50px;
-    width: 100%;
-    margin: 40px auto 0 auto;
-    padding: 0 10px;
-}
-.field-in {
-    display: block;
-    margin: 25px auto;
-    padding: 10px;
-    border-radius: 2px;
-    border: none;
-    width: 100%;
-    -webkit-transition: all 0.5s ease 0s;
-    -moz-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;
-}
-.name, .email, .message {
-    background-color: #FFFFFF;
-    border-bottom: 3px solid #B4B4B4;
-}
-.name:hover, .email:hover {
-    background-color: #A4806F;
-    border-bottom: 5px solid #917162;
-}
-.name:focus, .email:focus, .message:focus {
-    outline: none;
-    padding: 10px;
-}
-.message:hover {
-    background-color: #A4806F;
-    border-bottom: 5px solid #917162;
-    height: 115px;
-}
-.submit {
-    width: 30%;
-    color: black;
-    border-radius: 2px;
-    padding: 0px 0px 0px 0px;
-    background-color: #FFFFFF;
-    border: none;
-    border-bottom: 3px solid #898989;
-    -webkit-transition: all 0.5s ease 0s;
-    -moz-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;
-}
-.submit:hover {
-    color: black;
-    background: #A4806F;
-    border-bottom: 3px solid #917162;
-    cursor: pointer;
-    text-decoration: underline #917162;
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2);
-    -ms-transition: transform 0.5s ease-in-out;
-    -webkit-transition: transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out;
-}
-
-::-webkit-input-placeholder {
- color: black;
-}
-
-:-moz-placeholder {
- color: white;
-}
-
-::-moz-placeholder {
- color: white;
-}
-
-:-ms-input-placeholder {
- color: white;
-}
 /*Menu navigation button*/
 
 *, *:before, *:after {
@@ -306,7 +190,7 @@ body {
 /*rund menu knap størrelse og placering på skærmen*/
 label .menu {
     position: fixed;
-    right: 47.5%;
+    right: 47%;
     top: 82.5%;
     z-index: 100;
     width: 5.5%;
@@ -448,21 +332,11 @@ label .menu {
     width: 7%;
     right: 46%;
 }
-.contact-info {
-    width: 107%;
-    margin-top: 7.5%;
-    font-size: 1.4em;
-}
-.contact-form {
-    width: 75%;
-    margin-left: 12.5%;
-}
+
 #footer {
     display: none;
 }
-.linkedin {
-    margin-left: 54%;
-}
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -470,9 +344,7 @@ label .menu {
     height: 9%;
     width: 7%
 }
-.linkedin {
-    margin-left: 53.5%;
-}
+
 #portrait {
     margin-top: 1.5%;
 }
@@ -483,9 +355,7 @@ label .menu {
     height: 9%;
     width: 8%
 }
-.linkedin {
-    margin-left: 52.5%;
-}
+
 }
 
 @media screen and (max-width: 800px) {
@@ -494,9 +364,7 @@ label .menu {
     width: 9%;
     right: 46%;
 }
-.linkedin {
-    margin-left: 52%;
-}
+
 .close {
     margin-left: 87.5%;
 }
@@ -517,15 +385,8 @@ label .menu {
 .linkedin {
     margin-left: 53.5%;
 }
-.contact-info {
-    margin-top: 15%;
-    width: 112.5%;
-    font-size: 0.8em;
-}
-#animated-name {
-    width: 105%;
-    margin-top: 5%;
-}
+
+
 #aboutme {
     font-size: 0.75em;
 }
@@ -540,14 +401,9 @@ label .menu {
 label input:checked + .menu + ul {
     font-size: 1.7em;
    margin-left: 1%;
+	
 }
-#animated-name {
-    width: 105%;
-    margin-top: -12%;
-}
-.linkedin {
-    margin-left: 53%;
-}
+
 #portrait {
     width: 50%;
     margin-left: 25%;
@@ -593,11 +449,7 @@ p, a {
 }
 }
 
-@media screen and (max-width: 415px) {
-.linkedin {
-    margin-left: 52%;
-}
-}
+
 
 @media screen and (max-width: 400px) {
 label .menu {
@@ -609,12 +461,7 @@ label input:checked + .menu + ul {
     font-size: 1.4em;
     margin-left: -5%;
 }
-#animated-name {
-    margin-top: -10%;
-}
-.linkedin {
-    margin-left: 52%;
-}
+
 }
  @media screen and (max-width: 375px) {
 .linkedin {
@@ -625,6 +472,10 @@ label .menu {
     width: 17%;
     right: 41%;
     margin-top: 5%;
+	 }
+	 label input:checked + .menu + ul {
+		 margin-left: 2%;
+	 }
 }
  @media screen and (max-width: 300px) {
 label .menu {
@@ -636,9 +487,7 @@ label .menu {
  font-size:1em;
  margin-left: -8%;
 }
- .linkedin {
- margin-left: 49.5%;
-}
+
 }
  @media screen and (max-width: 200px) {
 label .menu {
