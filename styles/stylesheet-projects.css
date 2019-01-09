@@ -147,25 +147,27 @@ a {
 #portrait {
     position: absolute;
     margin-left: 6%;
-    margin-top: -5%;
+    top:23.5%;
     width: 35%;
     height: auto;
     z-index: -1;
 }
+
 .cv-timeline {
     display: inline-flex;
-    margin-left: 1%;
-    margin-right: 1%;
-    width: auto;
+    margin-left: 8%;
+    margin-right: 6%;
+    width: 85%;
     height: auto;
     margin-bottom: 8%;
+	
 }
 #aboutme {
     width: 30%;
     float: right;
     text-align: left;
     margin-right: 8%;
-    margin-top: 1.5%;
+    margin-top: 0.4%;
     display: block;
 }
 #aboutme h2 {
@@ -190,7 +192,7 @@ body {
 /*rund menu knap størrelse og placering på skærmen*/
 label .menu {
     position: fixed;
-    right: 47%;
+    right: 46.75%;
     top: 82.5%;
     z-index: 100;
     width: 5.5%;
